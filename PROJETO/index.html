@@ -5,54 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./imagem/ico.png" type="imagem/png">
     <title>Workshop</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 <body>
    <div class="container"> 
     <header>
         <h1 class="title">PARTICE DO WORKSOP QUE VAI MUDAR O SEU NEGÓCIO</h1>
     </header>  
-    <section>
-       <div class="formcontainer">
-         <h2 class="mb">GARANTA O SEU LUGAR NO WORKSHOP
+    <section class="d-flex flex-row-reverse">
+       <div class="col-sm-5 bg-white bg-opacity-75  p-4 border rounded-4">
+         <h2>GARANTA O SEU LUGAR NO WORKSHOP
              DO MAIOR ESPECIALISTA EM MARKENTING
              DA ATUALIDADE
          </h2>
-         <p class="mb">Neste evento, voçê vai aprender todos 
+         Neste evento, voçê vai aprender todos 
             os segredos que vão te fazer ser um 
             empreendedor de sucesso sem precisa
-            contar com a sorte 
-         </p>
-         <form method="post" action="https://hotmail.us10.list-manage.com/subscribe/post?u=3c944ff9ba6cccbb06f556099&amp;id=92217ae464" 
-               id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <input id="name" name="FNAME" type="text" placeholder="Nome">
-            <input id="email" name="EMAIL" type="text" placeholder="Email">
-            <select name="PLACE">
+            contar com a sorte
+            <br></br>
+         <form method="POST" action="https://hotmail.us10.list-manage.com/subscribe/post?u=3c944ff9ba6cccbb06f556099&amp;id=92217ae464">
+            <input id="name" name="FNAME" type="text" placeholder="Digite seu nome completo" class="form-control p-3" required>
+            <div id=""></div>
+            <input id="email" name="EMAIL" type="email" placeholder="Digite seu e-mail" class="form-control p-3" required>
+            <select name="PLACE" class="form-control p-3">
                 <option value="RJ">Rio de Janeiro</option>
                 <option value="Sp">São Paulo</option>
                 <option value="ES">Espirito Santo</option>
             </select>
-            <input type="submit" value="ENSCREVA-SE">
+            <button type="submit" id="validar" class="btn btn-info form-control p-3 text-light">INSCREVA-SE</button>
          </form>
        </div> 
     </section>
     <footer>
-        <img class="picture" src="./imagem/face.jpg">
-        <div class="description">
-            <h3>O Palestrante</h3>
-            <p>Carlos Fontana é conhecido por 
-                dar palestra que abalam a estrutura 
-                Prepara-se para sair do evento
-                com uma nova visão do que é possivel 
-                ser feito para seu negócio decolar.
-            </p>
-            <p>  Formando em Markenting pela universidade 
-                XZY e fundadador da MarkUp, a empresa 
-                vencedora dos últimos 5 Prêmios MarketingBr.
-            </p>
-        </div> 
+       <div class="container">
+            <div class="row">
+                <div class="col-sm-5 text-center">
+                    <img src="./imagem/face.jpg" alt="" class="img-fluid w-50 border rounded bg-white">
+                </div>
+                <div class="col-sm-5 text-white">
+                    <h1>O Palestrante.</h1>
+                    <hr>
+                    <h2>Carlos Fontana é conhecido por 
+                    dar palestra que abalam a estrutura 
+                    Prepara-se para sair do evento
+                    com uma nova visão do que é possivel 
+                    ser feito para seu negócio decolar.</h2>
+                </div>
+                <div class="col-sm"></div>
+            </div>
+       </div>
     </footer>
-   </div>
-
+<div class="container">
+    <div class="row bg-white">
+        <div class="col">
+            <div class="p-3 mt-2">Rodrigues, 2022</div>
+        </div>
+        <div class="col p-3 d-flex justify-content-end">
+            <div><a href="https://www.linkedin.com/in/rodrigueness7/" class="btn btn-primary">Contato</a></div>
+            <div class="col-sm-1"></div>
+            <div><a href="https://github.com/Rodrigueness7" class="btn btn-dark">Github</a></div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
